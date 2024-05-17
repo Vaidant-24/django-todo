@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+{% block my_block %}
+<div class = 'container-fluid p-3'>
+    <h3 class="display-5 fw-bold">SIGN-UP FORM:-</h3>
+</div>
+
+<div class="col-lg-5 shadow mx-auto p-4">
+    <div class="alert alert-success"><h2>Create Your Account</h2></div>
+    <div class = 'p-4'>
+
+        <form class = 'mb-4' action="/signup/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Create Account">
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

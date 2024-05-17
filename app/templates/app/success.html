@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% block my_block %}
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Congratulations! User Created Successfully!!</h1>
+      <h3 class="col-md-8 fs-4">You Can Login Now!</h3>
+      <a href="{% url 'app:login' %}">Click here to proceed to Login Page</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
